@@ -5,6 +5,8 @@ let index = 0
 function init() {
   const document.body
 
+  const key = parseInt(e.detail || e.which);
+
   body.addEventListener("keydown", function(event) {
     alert("You did awesome!")
   }
