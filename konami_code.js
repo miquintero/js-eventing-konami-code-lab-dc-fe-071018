@@ -7,14 +7,16 @@ function init() {
 
   const key = parseInt(e.detail || e.which);
 
-  body.addEventListener("keydown", function(event) {
-    alert("You did awesome!")
+  body.addEventListener("keydown", e => {
+    if (e.which === code) {
+    return e.preventDefault()
+    }
   }
 
   if (key === code.length) {
     alert("You did awesome!");
 
-index = 0;
+    index = 0;
   }
 else {
   index = 0;
